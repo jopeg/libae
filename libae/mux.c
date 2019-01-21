@@ -143,7 +143,6 @@ static void ae_mux_singlethread_handler(ae_mux_t *self,
 {
      uint32_t events = event->events;
      ae_mux_event_t *info = event->data.ptr;
-     AE_LD("info: %p", info);
      if(!info->handlers)
      {
           AE_LW("mux event with no handlers...what's the point?");
