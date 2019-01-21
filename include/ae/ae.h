@@ -15,7 +15,6 @@
 #include <ae/misc.h>
 #include <ae/mux.h>
 #include <ae/opt.h>
-#include <ae/periodic.h>
 #include <ae/pool.h>
 #include <ae/ptrarray.h>
 #include <ae/res.h>

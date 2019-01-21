@@ -4,7 +4,7 @@
 #include <ae/timer.h>
 #include <ae/mux.h>
 
-typedef struct periodic
+typedef struct ae_periodic
 {
     struct timespec ts;
     ae_timer_t timer;
