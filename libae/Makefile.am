@@ -23,7 +23,8 @@ libae0_la_SOURCES = \
 	str.c \
 	threadpool.c \
 	time.c \
-	timer.c 
+	timer.c \
+	periodic.c 
 
 
 headerdir = $(prefix)/include/ae
@@ -44,4 +45,5 @@ header_DATA = \
 	../include/ae/timer.h \
 	../include/ae/try.h \
 	../include/ae/types.h \
-	../include/ae/threadpool.h 
+	../include/ae/threadpool.h \
+	../include/ae/periodic.h 
