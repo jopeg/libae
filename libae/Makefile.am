@@ -2,6 +2,7 @@
 lib_LTLIBRARIES = libae0.la
 
 libae0_la_LDFLAGS = \
+    -lrt \
 	-no-undefined \
 	-version $(LIBAE_MAJOR):$(LIBAE_MINOR):$(LIBAE_AGE) 
 
