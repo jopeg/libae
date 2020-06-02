@@ -3,8 +3,9 @@ lib_LTLIBRARIES = libae0.la
 
 libae0_la_LDFLAGS = \
     -lrt \
+    -lm \
 	-no-undefined \
-	-version $(LIBAE_MAJOR):$(LIBAE_MINOR):$(LIBAE_AGE) 
+	-version $(LIBAE_MAJOR):$(LIBAE_MINOR):$(LIBAE_AGE)
 
 libae0_la_CPPFLAGS = \
 	-I ../include/
@@ -25,7 +26,7 @@ libae0_la_SOURCES = \
 	threadpool.c \
 	time.c \
 	timer.c \
-	periodic.c 
+	periodic.c
 
 
 headerdir = $(prefix)/include/ae
@@ -47,4 +48,4 @@ header_DATA = \
 	../include/ae/try.h \
 	../include/ae/types.h \
 	../include/ae/threadpool.h \
-	../include/ae/periodic.h 
+	../include/ae/periodic.h
